@@ -8,4 +8,6 @@ release模式编译
 [260328]
 考虑新建一个win分支
 考虑从ubt远程本机win做开发，建立一个新的git分支
+怎样建立像nndeploy那样的仓库集合，例如cpp、python、cuda，分别建立一个集合
+
 
