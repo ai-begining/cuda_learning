@@ -5,6 +5,14 @@ release模式编译
 
 添加了examples/01_gpu_basics/cpu_vs_gpu_1.cu，用于对比cpu、gpu上的矩阵乘法
 
+单独编译某个部分：
+cd /home/hy/projects/infra
+
+cmake -S cuda_learning/examples -B cuda_learning/examples/build -DCMAKE_CUDA_ARCHITECTURES=120
+
+cmake --build cuda_learning/examples/build --target cpu_vs_gpu -j
+cmake --build cuda_learning/examples/build --target cpu_vs_gpu_1 -j
+
 [260328]
 考虑新建一个win分支
 考虑从ubt远程本机win做开发，建立一个新的git分支
